@@ -1,0 +1,47 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Pagination -->
+  <div class="pagination">
+		{% if paginator.next_page %}
+			<a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+		{% else %}
+			<span class="pagination-item older">Older</span>
+		{% endif %}
+
+		{% if paginator.previous_page %}
+			{% if paginator.page == 2 %}
+        <h2>{{ paginator.page }}</h2>
+				<a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+			{% else %}
+				<a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+			{% endif %}
+		{% else %}
+			<span class="pagination-item newer">Newer</span>
+		{% endif %}
+	</div>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+
+</div>
