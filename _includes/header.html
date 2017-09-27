@@ -17,7 +17,7 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+          <a class="page-link" href="{{ site.baseurl }}/" tabindex="0">Home</a>
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.title %}
@@ -29,10 +29,6 @@
     {% endif %}
 
       <div class="title-box">
-        <a href="{{ "/" | relative_url }}">
-          <img class="profile-pic" src="https://pbs.twimg.com/profile_images/659834178813296640/_j82-PGM_400x400.jpg">
-        </a>
-
         <a href="{{ "/" | relative_url  }}">
           <h1 class="site-title">{{ site.title | escape }}</h1>
         </a>
