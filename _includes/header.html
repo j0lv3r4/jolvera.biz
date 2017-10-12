@@ -18,6 +18,7 @@
 
         <div class="trigger">
           <a class="page-link" href="{{ site.baseurl }}/" tabindex="0">Home</a>
+
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.title %}
@@ -28,13 +29,14 @@
       </nav>
     {% endif %}
 
+    {% if page.name == 'index.html' %}
       <div class="title-box">
         <a href="{{ "/" | relative_url  }}">
           <h1 class="site-title">{{ site.title | escape }}</h1>
         </a>
         <p class="tagline">{{ site.tagline }}</p>
       </div>
+    {% endif %}
     </div>
-  
   </div>
 </header>

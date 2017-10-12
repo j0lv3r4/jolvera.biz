@@ -1,0 +1,123 @@
+/*
+ * Taken directly from:
+ * https://github.com/daneden/animate.css/blob/master/animate.css
+ */
+
+._coinclap-animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+._coinclap-animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+._coinclap-animated.hinge {
+  animation-duration: 2s;
+}
+
+@keyframes _coinclap-pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes _coinclap-broadcast-light {
+    0% {
+        box-shadow: 0 0 0 3px rgba(255,255,255,.7);
+    }
+
+    19% {
+        box-shadow: 0 0 0 2px rgba(255,255,255,.5);
+    }
+
+    20% {
+        box-shadow: 0 0 0 6px rgba(255,255,255,.6)
+    }
+
+    39% {
+        box-shadow: 0 0 0 5px rgba(255,255,255,.4)
+    }
+
+    40% {
+        box-shadow: 0 0 0 9px rgba(255,255,255,.5)
+    }
+
+    60% {
+        box-shadow: 0 0 0 8px rgba(255,255,255,.4);
+        animation-timing-function: cubic-bezier(.5,0,1,.5)
+    }
+
+    to {
+        box-shadow: 0 0 0 0 rgba(255,255,255,.2)
+    }
+}
+
+@keyframes _coinclap-broadcast-dark {
+    0% {
+        box-shadow: 0 0 0 3px rgba(0,0,0,.7);
+    }
+
+    19% {
+        box-shadow: 0 0 0 2px rgba(0,0,0,.5);
+    }
+
+    20% {
+        box-shadow: 0 0 0 6px rgba(0,0,0,.6)
+    }
+
+    39% {
+        box-shadow: 0 0 0 5px rgba(0,0,0,.4)
+    }
+
+    40% {
+        box-shadow: 0 0 0 9px rgba(0,0,0,.5)
+    }
+
+    60% {
+        box-shadow: 0 0 0 8px rgba(0,0,0,.4);
+        animation-timing-function: cubic-bezier(.5,0,1,.5)
+    }
+
+    to {
+        box-shadow: 0 0 0 0 rgba(0,0,0,.2)
+    }
+}
+
+._coinclap-pulse-light {
+  animation: _coinclap-pulse .5s infinite, _coinclap-broadcast-light 1s infinite ease-out;
+}
+
+._coinclap-pulse-dark {
+  animation: _coinclap-pulse .5s infinite, _coinclap-broadcast-dark 1s infinite ease-out;
+}
+
+#_coinclap-clap-button {
+  position: fixed;
+  bottom: 4em;
+  right: 4em;
+  padding: .8em;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+#_coinclap-clap-button:hover {
+  cursor: pointer;
+}
+ 
+#_coinclap-clap-button:focus {
+  outline: none;
+}
+
+#_coinclap-clap-img {
+  width: 3em;
+}

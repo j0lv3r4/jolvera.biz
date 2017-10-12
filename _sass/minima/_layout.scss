@@ -11,6 +11,7 @@
 
   a {
     color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -23,7 +24,6 @@
 .title-box {
   display: block;
   margin: 1em auto 0;
-  text-align: center;
 
   h1 {
     margin: 0;
@@ -37,17 +37,16 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   color: $color-light-grey !important;
   margin-bottom: 0;
-
-  &,
-  &:hover,
-  &:visited {
-    text-decoration: none;
-    // color: $grey-color-dark;
-  }
 }
 
-.tagline {
-  margin-top: -.5em;
+.page-site-title {
+  float: left;
+  display: block;
+  color: $color-green;
+}
+
+.post .site-nav {
+  text-align: left;
 }
 
 .site-nav {
@@ -284,7 +283,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  // @include relative-font-size(1.5);
 }
 
 
@@ -300,6 +299,7 @@
 .post-title {
   @include relative-font-size(2.425);
   color: $color-green;
+  font-weight: 700;
   // letter-spacing: -1px;
   line-height: 1.2;
 
