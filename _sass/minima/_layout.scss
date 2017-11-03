@@ -15,10 +15,8 @@
   }
 }
 
-.profile-pic {
-  max-width: 20%;
-  margin-bottom: 1em;
-  border-radius: 50%;
+.home-header {
+  padding: 0 0 $spacing-unit 0;
 }
 
 .title-box {
@@ -39,6 +37,10 @@
   margin-bottom: 0;
 }
 
+.tagline {
+  margin-bottom: 0;
+}
+
 .page-site-title {
   float: left;
   display: block;
@@ -51,7 +53,7 @@
 
 .site-nav {
   float: none;
-  text-align: center;
+  // text-align: center;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -165,8 +167,7 @@
 
 .licenses {
   max-width: 80%;
-  margin: 2em auto 0;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .fa-facebook-square {
@@ -273,6 +274,10 @@
 
   > li {
     margin-bottom: $spacing-unit;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 }
 
