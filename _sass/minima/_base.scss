@@ -1,3 +1,11 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /**
  * Reset some basic elements
  */
@@ -24,8 +32,6 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -82,7 +88,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: 600;
 }
 
 
@@ -162,7 +168,12 @@ pre {
   }
 }
 
-
+code.highlighter-rouge {
+  color: #333;
+  // background-color: #fffde1;
+  // background-color: #ff9d76;
+  background-color: #BAEAF8;
+}
 
 /**
  * Wrapper
