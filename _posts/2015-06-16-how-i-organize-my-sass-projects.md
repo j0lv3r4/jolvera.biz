@@ -1,7 +1,9 @@
 ---
-layout: post
 title: How I organize my Sass projects
-tag: Sass 
+date: 2015-06-16 00:00:00 Z
+tags:
+- Sass
+layout: post
 author: Juan Olvera
 twitter: thinkxl
 ---
