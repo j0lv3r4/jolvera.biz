@@ -18,7 +18,7 @@ layout: home
         </header>
 
         <div class="post-excerpt">
-          {{ post.excerpt }}
+          <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} [...] </p>
         </div>
       </article>
     {% endfor %}
