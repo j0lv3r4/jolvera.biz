@@ -319,8 +319,14 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
-  // text-align: center;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  margin-bottom: -4em;
+  margin-left: -2em;
+  padding: 1em 1em 4em 2em;
+  // margin-bottom: $spacing-unit;
+  background-color: #BAEAF8;
 }
 
 .post-title {
@@ -333,16 +339,16 @@
   font-weight: 700;
   line-height: 1;
 
-  &::before {
-    top: -.5em;
-    left: -1em;
-    position: absolute;
-    z-index: -1;
-    content: '';
-    background-color: #BAEAF8;
-    width: 100%;
-    height: 5.5em;
-  }
+  // &::before {
+  //   top: -.5em;
+  //   left: -1em;
+  //   position: absolute;
+  //   z-index: -1;
+  //   content: '';
+  //   background-color: #BAEAF8;
+  //   width: 100%;
+  //   height: 5.5em;
+  // }
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.15);
