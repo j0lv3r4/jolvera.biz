@@ -5,16 +5,24 @@ layout: home
 <div>
   <h2>Blog</h2>
 
-  <ul class="post-list">
+  <main class="blog-index">
     {% for post in paginator.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <article class="post-item">
+        <header class="post-header">
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </li>
+          <h3 class="post-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+        </header>
+
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+      </article>
     {% endfor %}
-  </ul>
+  </main>
 
   <!-- Pagination links -->
   {% if paginator.total_pages > 1 %}
