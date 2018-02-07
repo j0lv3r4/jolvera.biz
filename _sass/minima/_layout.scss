@@ -328,25 +328,20 @@
 
   position: relative;
   color: #333;
-  font-family: $heading-font-family;
+  // font-family: $heading-font-family;
   font-size: 4em;
   font-weight: 700;
-  line-height: .8;
+  line-height: 1;
 
   &::before {
-    top: .35em;
-    left: -.5em;
+    top: -.5em;
+    left: -1em;
     position: absolute;
     z-index: -1;
     content: '';
-    /* background-color: #E4C04C;*/
     background-color: #BAEAF8;
-
-    // background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-    // background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
-    // background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
     width: 100%;
-    height: 3.5em;
+    height: 5.5em;
   }
 
   @include media-query($on-laptop) {
