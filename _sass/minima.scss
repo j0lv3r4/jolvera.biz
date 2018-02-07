@@ -7,7 +7,7 @@
 // $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $base-font-family: 'Work Sans', sans-serif;
 $heading-font-family: 'Marvin Visions', sans-serif;
-$base-font-size: 20px !default;
+$base-font-size: 18px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -36,7 +36,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark: darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width: 42em !default;
+$content-width: 48em !default;
 
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
