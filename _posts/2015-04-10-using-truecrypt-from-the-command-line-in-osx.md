@@ -1,8 +1,9 @@
 ---
-layout: post
-title: Using TrueCrypt from the command line in OSX 
-tag:
+title: Using TrueCrypt from the command line in OSX
+date: 2015-04-10 00:00:00 Z
+tags:
 - Crypto
+layout: post
 author: Juan Olvera
 twitter: thinkxl
 ---

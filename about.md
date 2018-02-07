@@ -1,7 +1,7 @@
 ---
-layout: page
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: page
 ---
 
 My name is Juan Olvera. I was born in Mexico, and currently live in The Woodlands, TX.
