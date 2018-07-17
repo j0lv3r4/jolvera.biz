@@ -7,13 +7,13 @@ layout: home
 
   <main class="blog-index">
     {% for post in paginator.posts %}
-      <article class="post-item">
+      <article class="h-entry post-item">
         <header class="post-header">
           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span class="dt-published post-meta">{{ post.date | date: date_format }}</span>
 
-          <h3 class="post-title">
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <h3 class="p-name post-title">
+            <a class="u-url post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h3>
         </header>
 
