@@ -2,6 +2,7 @@
 title: About
 permalink: "/about/"
 layout: page
+order: 1
 ---
 
 My name is Juan Olvera. I was born in Mexico, and currently live in The Woodlands, TX.

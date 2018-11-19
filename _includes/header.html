@@ -4,6 +4,14 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
     <div class="row">
     {% if page_paths %}
+      <div class="title-box">
+        <a class="h-card" rel="me" href="https://jolvera.biz">
+          <h1 class="site-title">{{ site.title | escape }}</h1>
+        </a>
+
+        <p class="p-note tagline">{{ site.tagline }}</p>
+      </div> <!-- .title-box -->
+
       <nav class="site-nav" role="navigation">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -18,7 +26,6 @@
 
         <div class="trigger">
           <a class="page-link" href="{{ site.baseurl }}/" tabindex="0">Home</a>
-
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.title %}
@@ -29,14 +36,5 @@
       </nav>
     {% endif %}
 
-    {% if page.name == 'index.html' %}
-      <div class="title-box">
-        <a class="h-card" rel="me" href="https://jolvera.biz">
-          <h1 class="site-title">{{ site.title | escape }}</h1>
-        </a>
-        <p class="p-note tagline">{{ site.tagline }}</p>
-      </div>
-    {% endif %}
-    </div>
   </div>
 </header>
