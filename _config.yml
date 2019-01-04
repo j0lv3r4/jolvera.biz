@@ -20,7 +20,7 @@ paginate: 5
 author:
   name: Juan Olvera
 twitter_username: _jolvera
-github_username: thinkxl
+github_username: j0lv3r4
 markdown: kramdown
 gems:
 - jekyll-feed

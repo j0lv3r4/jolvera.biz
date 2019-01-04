@@ -5,6 +5,7 @@ tags:
 - Personal
 - Productivity
 layout: post
+image: '/public/img/using-internet.png'
 author: Juan Olvera
 twitter: _jolvera
 ---
