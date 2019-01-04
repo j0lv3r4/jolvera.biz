@@ -20,7 +20,7 @@ author:
 twitter_username: _jolvera
 github_username: j0lv3r4
 markdown: kramdown
-gems:
+plugins:
 - jekyll-feed
 - jekyll-paginate
 exclude:
