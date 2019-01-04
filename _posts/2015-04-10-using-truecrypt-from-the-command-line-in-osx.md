@@ -5,7 +5,7 @@ tags:
 - Crypto
 layout: post
 author: Juan Olvera
-twitter: thinkxl
+twitter: _jolvera
 ---
 
 If you *still* love TrueCrypt and like to keep all you workflow inside the command line like me, this small guide is for you.

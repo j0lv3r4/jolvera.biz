@@ -5,7 +5,7 @@ tags:
 - Sass
 layout: post
 author: Juan Olvera
-twitter: thinkxl
+twitter: _jolvera
 ---
 
 This is a basic writing on how I organize my Sass projects, mostly for self documentation.
