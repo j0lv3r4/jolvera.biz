@@ -11,11 +11,9 @@ collections:
 permalink: pretty
 tagline: Front-end developer & web standards enthusiastic
 email: jolvera@posteo.de
-description: 'Juan Olvera''s personal website.
-
-'
+description: "Juan Olvera's personal website."
 baseurl: ''
-url: ''
+url: 'https://jolvera.biz'
 paginate: 5
 author:
   name: Juan Olvera
