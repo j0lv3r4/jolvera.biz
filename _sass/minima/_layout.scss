@@ -8,8 +8,6 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
-  // background-color: #333;
-  // color: #fff;
 
   a {
     color: inherit;
@@ -43,10 +41,6 @@
   line-height: $base-line-height * $base-font-size * 2.25;
 }
 
-// .tagline {
-//   margin-bottom: 0;
-// }
-
 .page-site-title {
   float: left;
   display: block;
@@ -56,7 +50,7 @@
 .home {
   .page-content .home-content {
     width: 99%;
-    padding: 1.6em;
+    padding: 2.5em;
     background-color: #fff;
     box-shadow: .5em .5em 0 0 #ddd;
   }
@@ -69,12 +63,9 @@
 .site-nav {
   float: none;
   width: 99%;
-  // text-align: center;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background-color: #ff9d76;
-  box-shadow: .5em .5em 0 0 #ff4273;
-  // background-color: #ff4273;
-  // border-bottom: 8px solid #ff4273;
+  background-color: $brand-color;
+  box-shadow: .5em .5em 0 0 darken($brand-color, 20%);
 
   .nav-trigger {
       display: none;
@@ -89,14 +80,12 @@
   }
 
   .page-link {
-    padding: .5em 1.5em;
-    color: $text-color;
+    padding: .5em 1em;
+    color: #fff;
     line-height: $base-line-height;
-    background-color: #ff9d76;
 
     &:hover {
-      color: #fff;
-      background-color: #ff4273;
+      background-color: darken($brand-color, 20%);
     }
   }
 
@@ -149,6 +138,7 @@
 
 .home {
   h2 {
+    font-weight: bold;
     font-size: 2em;
   }
 }
@@ -172,6 +162,10 @@
 
   .post-title {
     font-size: 1.3em;
+  }
+
+  .post-link {
+    // color: $big-text-brand-color;
   }
 }
 
@@ -316,7 +310,7 @@
 
   .post {
     width: 99%;
-    padding: 1.6em;
+    padding: 2.5em;
     background-color: #fff;
     box-shadow: .5em .5em 0 0 #ddd;
   }

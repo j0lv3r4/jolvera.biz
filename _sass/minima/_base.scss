@@ -16,8 +16,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -43,8 +41,6 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -52,8 +48,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -65,8 +59,6 @@ figure > img {
 figcaption {
   font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -82,16 +74,12 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
-
-
 
 /**
  * Links
@@ -101,12 +89,12 @@ a {
   text-decoration: underline;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 5%);
   }
 
   &:hover {
     // color: $text-color;
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 5%);
     text-decoration: underline;
   }
 
@@ -118,7 +106,6 @@ a {
     }
   }
 }
-
 
 /**
  * Blockquotes
@@ -135,8 +122,6 @@ blockquote {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Code formatting
@@ -195,8 +180,6 @@ code.highlighter-rouge {
   }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -205,8 +188,6 @@ code.highlighter-rouge {
   display: table;
   clear: both;
 }
-
-
 
 /**
  * Icons

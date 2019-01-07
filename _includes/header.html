@@ -1,4 +1,4 @@
-<header class="site-header{% if page.name == 'index.html' %} home-header{% else %} page-header{% endif %}" role="banner">
+<header class="site-header{% if page.name == 'index.html' %} home-header{% else %} page-header{% endif %}">
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
@@ -6,13 +6,17 @@
     {% if page_paths %}
       <div class="title-box">
         <a class="h-card" rel="me" href="https://jolvera.biz">
+          {% if page.layout == 'home' %}
           <h1 class="site-title">{{ site.title | escape }}</h1>
+          {% else %}
+          <p class="site-title">{{ site.title | escape }}</p>
+          {% endif %}
         </a>
 
         <p class="p-note tagline">{{ site.tagline }}</p>
       </div> <!-- .title-box -->
 
-      <nav class="site-nav" role="navigation">
+      <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
