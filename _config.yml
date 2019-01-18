@@ -9,7 +9,7 @@ collections:
     title: Uploads
     output: true
 permalink: pretty
-tagline: Front-end developer & web standards enthusiastic
+tagline: Frontend developer
 email: jolvera@posteo.de
 description: "Opinions and thoughts on web development, readings, and personal experiences."
 baseurl: ''
