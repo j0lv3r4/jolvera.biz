@@ -1,0 +1,29 @@
+<header class="site-header home-header">
+  {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
+
+  <div class="row">
+    {% if page_paths %}
+    <div class="title-box">
+      <a class="h-card" rel="me" href="https://jolvera.biz">
+        <h1 class="site-title">{{ site.title | escape }}</h1>
+      </a>
+
+      <p class="p-note tagline">{{ site.tagline }}</p>
+    </div> <!-- .title-box -->
+
+    <div class="site-description">
+      <p>{{ site.description }}</p>
+    </div>
+
+    <nav class="site-nav">
+      {% for path in page_paths %}
+        {% assign my_page = site.pages | where: "path", path | first %}
+
+        {% if my_page.title %}
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  {% endif %}
+</header>
