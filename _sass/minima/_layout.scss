@@ -103,9 +103,8 @@
     font-size: 1.5rem;
   }
 
-  h2 {
-    font-weight: bold;
-    font-size: 2em;
+  .post-title {
+    font-size: 2rem;
   }
 }
 
@@ -129,14 +128,6 @@
   .post-meta {
     display: block;
     margin-bottom: .7em;
-  }
-
-  .post-title {
-    font-size: 2rem;
-  }
-
-  .post-link {
-    // color: $big-text-brand-color;
   }
 }
 
@@ -295,7 +286,7 @@
 
 .post-meta {
   margin-bottom: 0;
-  color: #777;
+  color: #666;
   font-weight: bold;
 }
 
