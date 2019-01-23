@@ -1,31 +1,33 @@
 <header class="site-header{% if page.name == 'index.html' %} home-header{% else %} page-header{% endif %}">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
+  {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
 
-    <div class="row">
-    {% if page_paths %}
-      <div class="title-box">
-        <a class="h-card" rel="me" href="https://jolvera.biz">
-          {% if page.layout == 'home' %}
-          <h1 class="site-title">{{ site.title | escape }}</h1>
-          {% else %}
-          <p class="site-title">{{ site.title | escape }}</p>
-          {% endif %}
-        </a>
-
-        <nav class="site-nav">
-          <a class="page-link" href="{{ site.baseurl }}/" tabindex="0">Home</a>
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
-        </nav>
-
+  <div class="row">
+    <div class="title-box">
+      <a class="h-card" rel="me" href="https://jolvera.biz">
         {% if page.layout == 'home' %}
-        <p class="p-note tagline">{{ site.tagline }}</p>
+        <h1 class="site-title">{{ site.title | escape }}</h1>
+        {% else %}
+        <p class="site-title">{{ site.title | escape }}</p>
         {% endif %}
-      </div> <!-- .title-box -->
-    {% endif %}
+      </a>
+
+      {% if page.layout == 'home' %}
+        <p class="p-note site-description">{{ site.description }}</p>
+      {% endif %}
+    </div> <!-- .title-box -->
+
+
+  {% if page_paths %}
+    <nav class="site-nav">
+      {% comment %} <a class="page-link" href="{{ site.baseurl }}/" tabindex="0">Home</a> {% endcomment %}
+      {% for path in page_paths %}
+        {% assign my_page = site.pages | where: "path", path | first %}
+        {% if my_page.title %}
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  {% endif %}
+  </div> <!-- .row -->
 </header>
