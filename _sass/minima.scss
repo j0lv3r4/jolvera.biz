@@ -42,6 +42,13 @@ $on-laptop: 800px !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
+
+@mixin responsive-to($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -57,6 +64,4 @@ $on-laptop: 800px !default;
 "minima/base",
 "minima/fonts",
 "minima/layout",
-"minima/grid",
-// "minima/syntax-highlighting";
 "minima/base16-oceanicnext.dark";
