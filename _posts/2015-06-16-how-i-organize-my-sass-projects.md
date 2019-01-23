@@ -6,6 +6,9 @@ tags:
 layout: post
 author: Juan Olvera
 twitter: _jolvera
+summary: "his is a basic writing on how I organize my Sass projects, mostly for self documentation.
+
+I have two structures; mid and small-size projects. I work mostly for small business, so there is no need to over engineer my Sass code. "
 ---
 
 This is a basic writing on how I organize my Sass projects, mostly for self documentation.

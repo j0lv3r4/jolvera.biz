@@ -6,6 +6,7 @@ tags:
 layout: post
 author: Juan Olvera
 twitter: _jolvera
+summary: "If you *still* love TrueCrypt and like to keep all you workflow inside the command line like me, this small guide is for you."
 ---
 
 If you *still* love TrueCrypt and like to keep all you workflow inside the command line like me, this small guide is for you.

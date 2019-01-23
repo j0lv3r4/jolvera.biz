@@ -8,6 +8,9 @@ layout: post
 image: '/public/img/using-internet.png'
 author: Juan Olvera
 twitter: _jolvera
+summary: "This list is a small set of rules I plan to follow to improve my Internet consumption. I put this together because I have been wasting time on my computer in my free time. 
+
+For example, one Friday night I found myself with some free time before going to bed—everyone was asleep for some reason. So I went to my office with no goal in mind, turned on my computer and started reading my Twitter feed, then switched to Hackernews and finished with watching memes on Reddit."
 ---
 
 This list is a small set of rules I plan to follow to improve my Internet consumption. I put this together because I have been wasting time on my computer in my free time. 

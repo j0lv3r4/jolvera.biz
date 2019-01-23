@@ -4,17 +4,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <meta name="author" content="Juan Olvera">
 
   <!-- Twitter cards -->
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
   <meta name="twitter:creator" content="@{{ page.author }}">
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
 
   {% if page.summary %}
   <meta name="twitter:description" content="{{ page.summary }}">
   {% else %}
-  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate:200 }}">
+  <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
 
   {% if page.image %}
@@ -31,9 +34,8 @@
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl  }}/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl  }}/public/favicon.ico?v2">
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/public/css/coinclap.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
   
 </head>

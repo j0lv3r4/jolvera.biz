@@ -6,9 +6,9 @@
     <div class="title-box">
       <a class="h-card" rel="me" href="https://jolvera.biz">
         {% if page.layout == 'home' %}
-        <h1 class="site-title">{{ site.title | escape }}</h1>
+        <h1 class="site-title">{{ site.author.name | escape }}</h1>
         {% else %}
-        <p class="site-title">{{ site.title | escape }}</p>
+        <p class="site-title">{{ site.author.name | escape }}</p>
         {% endif %}
       </a>
 
