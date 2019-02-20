@@ -64,10 +64,12 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 1em;
 }
 
 li {
+  margin-top: .5em;
+
   > ul,
   > ol {
     margin-bottom: 0;
@@ -135,7 +137,6 @@ code {
   border-radius: 3px;
   // background-color: #eef;
   color: lighten($color-light-grey, 10%);
-  background-color: lighten($color-black, 10%);
 }
 
 code {
