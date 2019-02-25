@@ -76,9 +76,6 @@
   color: $color-green;
 }
 
-.home-content {
-}
-
 .post .site-nav {
   text-align: left;
 }
@@ -295,8 +292,6 @@
   // @include relative-font-size(1.5);
 }
 
-
-
 /**
  * Posts
  */
@@ -317,7 +312,34 @@
   margin-top: 1em;
   margin-bottom: $spacing-unit;
 
+  .anchor-link {
+    position: relative;
+    display: flex;
+
+    &:hover {
+      &::before {
+        display: block;
+      }
+    }
+
+    &::before {
+      display: none;
+      left: -1em;
+      position: absolute;
+      align-self: center;
+      content: "§";
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #888;
+    }
+  }
+
   h2 {
+    a {
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     @include relative-font-size(2);
 
     @include media-query($on-laptop) {
@@ -326,6 +348,11 @@
   }
 
   h3 {
+    a {
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     @include relative-font-size(1.625);
 
     @include media-query($on-laptop) {
@@ -334,6 +361,11 @@
   }
 
   h4 {
+    a {
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     @include relative-font-size(1.25);
 
     @include media-query($on-laptop) {
