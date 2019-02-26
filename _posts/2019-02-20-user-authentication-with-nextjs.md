@@ -6,10 +6,10 @@ tags:
 - React
 - Next.js 
 layout: post
-image: '/public/img/using-internet.png'
+image: '/public/img/user-authentication-with-next.js.png'
 author: Juan Olvera
 twitter: _jolvera
-summary: "User authentication with Next.js has been one of the most requested examples by the community. [The GitHub issue](https://github.com/zeit/next.js/issues/153) had more than 300 likes and hundreds of comments with recommendations and proposals."
+summary: "User authentication with Next.js has been one of the most requested examples by the community. The GitHub issue had more than 300 likes and hundreds of comments with recommendations and proposals."
 ---
 
 User authentication with Next.js has been one of the most requested examples by the community. [The GitHub issue](https://github.com/zeit/next.js/issues/153) had more than 300 likes and hundreds of comments with recommendations and proposals. 
